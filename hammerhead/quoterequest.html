@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Hammerhead Promotions</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="hammerhead.gif" height="60" width="60"></a>
+      <ul class="right hide-on-med-and-down">
+      <li><a href="aboutus.html"><i class="material-icons left">info</i>About Us</a></li>
+      <li><a href="portfolio.html"><i class="material-icons left">folder</i>Portfolio</a></li>
+      <li><a href="services.html"><i class="material-icons left">work</i>Services</a></li>
+      <li><a href="policies.html"><i class="material-icons left">toc</i>Policies</a></li>
+      <li><a href="quote.html"><i class="material-icons left">toll</i>Quote</a></li>
+      <li><a href="contact.html"><i class="material-icons left">textsms</i>Contact</a></li>  
+    </ul>
+          <ul id="nav-mobile" class="side-nav">
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+      </nav>
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text">Quote Request Form</h1>
+      <br></br>
+  <div class="row">
+    <form class="col s12" action="cgi-sys/FormMail.cgi" method="POST">
+      <input type="hidden" name="recipient" value="davenale@hammerheadpromotions.com">
+      <input type="hidden" name="subject" value="Project Quote">
+      <input type="hidden" name="title" value="Thank You for your Interest!">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">person</i>
+          <input placeholder="" id="Contact" name="Contact" type="text" class="validate">
+          <label for="Contact">Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">business</i>
+          <input placeholder="" id="team_or_company" type="text" name="Race Team/Company" class="validate">
+          <label for="team_or_company">Team/Company Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s7">
+          <i class="material-icons prefix">place</i>
+          <input placeholder="" id="Address" type="text" name="Address">
+          <label for="Address">Street Address</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="" id="City" type="text" name="City">
+          <label for="City">City</label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="" id="State" name="State"  type="text">
+          <label for="State">State</label>
+        </div>
+        <div class="input-field col s1">
+          <input placeholder="" id="Zip" name="Zip Code" type="text">
+          <label for="Zip">ZIP</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s9">
+          <i class="material-icons prefix">local_post_office</i>
+          <input placeholder="" id="email" name="eMail"  type="email" class="validate">
+          <label for="email" data-error="Invalid!" data-success="Valid.">Email</label>
+        </div>
+        <div class="input-field col s3">
+          <i class="material-icons prefix">phone</i>
+          <input placeholder="" id="Phone" type="tel" class="validate">
+          <label data-error="Invalid!" data-success="Valid." for="phone">Phone Number</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">device_hub</i>
+          <input placeholder="" id="existing_url" type="text" name="Existing URL">
+          <label for="existing_url">Existing URL (Optional)</label>
+        </div>
+      </div>
+      <br>
+      <h6>Project</h6>
+      <p>
+      <input class="filled-in" type="checkbox" id="site-design" name="new site design" value="yes">
+      <label for="site-design">New site design</label>
+      </p>
+      <p>
+      <input class="filled-in" type="checkbox" id="site-redesign" name="site redesign" value="yes">
+      <label for="site-redesign">Existing site redesign/makeover</label>
+      </p>
+      <p>
+      <input class="filled-in" type="checkbox" id="site-maintain" name="Site maintainance" value="yes">
+      <label for="site-maintain">Site maintenance</label>
+      </p>
+      <div class="row">
+      <div class="input-field col s12">
+      <i class="material-icons prefix">more_horiz</i>
+      <input placeholder="" name="Other project" type="text" id="other"/>
+      <label for="other">Other (Graphic design, scanning, printing, etc)</label>
+      </div>
+      </div>
+    <h6>Has a budget been assigned?</h6>
+      <p>
+      <input class="with-gap" name="Budget" value="no" type="radio" id="budget-y">
+      <label for="budget-y">Yes</label>
+      </p>
+      <p>
+      <input class="with-gap" name="Budget" value="yes" type="radio" id="budget-n">
+      <label for="budget-n">No</label>
+      </p>
+      <div class="row">
+      <div class="input-field col s12">
+      <i class="material-icons prefix">toll</i>
+      <input placeholder="" name="Project budget" type="text" id="other">
+      <label for="other">Budget Amount (Leave blank if you answered "No")</label>
+      </div>
+      </div>
+    <div class="row">
+      <div class="input-field col s12">
+       <i class="material-icons prefix">event</i>
+       <input placeholder="" type="text" id="other" name="Go live date">
+       <label for="other">When do you need the site to be online?</label>
+      </div>
+    </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">message</i>
+          <textarea placeholder="" id="otherinfo" class="materialize-textarea" name="Addtional info"></textarea>
+            <label for="otherinfo">Additional information</label>
+          </div>
+        </div>
+  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+  </button>
+    </form>
+  </div>
+        
