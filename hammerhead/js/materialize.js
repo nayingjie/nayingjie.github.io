@@ -602,6 +602,7 @@ else {
 
   $(document).ready(function(){
     $('.dropdown-button').dropdown();
+    $(".button-collapse").sideNav();
   });
 }( jQuery ));
 ;(function($) {
@@ -6158,4 +6159,3 @@ Picker.extend( 'pickadate', DatePicker )
   });
 
 }
-$(".button-collapse").sideNav();
