@@ -34,6 +34,13 @@
     <li><a href="#!">Second Sidebar Link</a></li>
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <script>
+      $(function() {
+        setTimeout(function() {
+          $("#sidenav-overlay").trigger("click");
+        }, 5000);
+      });
+    </script>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
