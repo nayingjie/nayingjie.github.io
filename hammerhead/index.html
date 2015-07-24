@@ -19,13 +19,18 @@
       });
       $(".button-collapse").sideNav({edge: 'right'});
       </script>
-
-<nav class="light-blue lighten-1" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-    <ul id="nav-mobile" class="right side-nav">
-      <li><a href="#">Navbar Link</a></li>
-    </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-  </div>
-</nav>
-</body>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <!-- Put up a "hamburger" menu when the web page gets too narrow -->
+    <a href="#" data-activates="side-menu" ><i class="mdi-navigation-menu"></i></a>
+    <!-- These navigation links appear when the web page gets narrow. -->
+    <!-- They appear when the user clicks the hamburger menu. -->
+    <ul class="side-nav" id="side-menu">
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul></body>
   </html>
